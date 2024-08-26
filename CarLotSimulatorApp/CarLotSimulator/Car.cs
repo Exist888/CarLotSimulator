@@ -20,4 +20,9 @@ public class Car
         Console.WriteLine($"    It also makes a {HonkNoise} honk noise.\n" +
                           $"");
     }
+
+    public Car()
+    {
+        CarLot.NumberOfCars++;
+    }
 }

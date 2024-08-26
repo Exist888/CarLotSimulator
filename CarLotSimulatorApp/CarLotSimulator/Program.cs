@@ -7,7 +7,7 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine($"Current number of cars: {CarLot.NumberOfCars}");
             CarLot currentInventory = new CarLot();
             
             //TODO
@@ -27,11 +27,13 @@ namespace CarLotSimulator
             myFirstCar.Model = "Bel Air";
             myFirstCar.EngineNoise = "medium";
             myFirstCar.HonkNoise = "loud";
+            Console.WriteLine($"Current number of cars: {CarLot.NumberOfCars}");
 
             Car mySecondCar = new Car()  // Instantiating Second Car - Setting Properties Using Second Way - Object Initializer
             {
                 Year = 1991, Make = "Pontiac", Model = "Sunbird", EngineNoise = "medium", HonkNoise = "medium"
             };
+            Console.WriteLine($"Current number of cars: {CarLot.NumberOfCars}");
 
             Car myThirdCar = new Car() // Instantiating Second Car - Setting Properties Using Third Way - Object Initializer
             {
@@ -39,8 +41,9 @@ namespace CarLotSimulator
                 Make = "Subaru",
                 Model = "Solterra",
                 EngineNoise = "very soft",
-                HonkNoise = "medium"
+                HonkNoise = "medium",
             };
+            Console.WriteLine($"Current number of cars: {CarLot.NumberOfCars}");
 
             currentInventory.CarInventory.Add(myFirstCar);
             currentInventory.CarInventory.Add(mySecondCar);
